@@ -29,9 +29,9 @@ function ToUp(
   btn.style.fontSize = arrowSize + "px";
   btn.style.position = "fixed";
   btn.style.bottom = bottomValue + "px";
-  if (pose == "right") {
+  if (pose === "right") {
     btn.style.right = poseValue + "px";
-  } else if (pose == "left") {
+  } else if (pose === "left") {
     btn.style.left = poseValue + "px";
   }
   btn.style.width = width + "px";

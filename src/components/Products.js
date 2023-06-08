@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchProducts, getCats } from "../store/actionCreator";
+import { getCats } from "../store/actionCreator";
 import ProductCard from "./ProductCard";
 import { Link, useSearchParams } from "react-router-dom";
 
@@ -22,7 +22,7 @@ export default function Products() {
 
   useEffect(() => {
     dispatch(getCats());
-  }, []);
+  }, [dispatch]);
 
   const productsElements = filtered?.map((prod) => {
     return (
@@ -40,7 +40,7 @@ export default function Products() {
 
   const categoriesElements = categoriesData.map((cat) => {
     return (
-      <button key={cat} className={catFilter == cat ? "active-filter" : "no-active"} onClick={() => setSearchParams({ category: cat })}>
+      <button key={cat} className={catFilter === cat ? "active-filter" : "no-active"} onClick={() => setSearchParams({ category: cat })}>
         {cat}
       </button>
     );

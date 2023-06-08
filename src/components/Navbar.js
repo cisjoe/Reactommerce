@@ -24,7 +24,7 @@ export default function Navol() {
           <Nav>
             <Nav.Item>
               <Nav.Link as={NavLink} to="cart" className="cartICOLink">
-                <img src={cartICO} className="cartICO" />
+                <img src={cartICO} className="cartICO" alt=""/>
                 <span className="num-of-cart-items">{cart.length}</span>
               </Nav.Link>
             </Nav.Item>

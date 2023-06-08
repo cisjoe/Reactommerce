@@ -13,15 +13,15 @@ export default function ProductDetails() {
 
   useEffect(() => {
     dispatch(fetchProducts());
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     productsData.products.forEach((prod) => {
-      if (prod.id == params.id) {
+      if (prod.id === params.id) {
         dispatch(action("selected-product", prod));
       }
     });
-  }, [params.id]);
+  }, [params.id, dispatch, productsData.products]);
 
   function htmlMaker(index) {
     return ReactDOMServer.renderToStaticMarkup(

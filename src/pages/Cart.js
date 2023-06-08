@@ -21,7 +21,7 @@ export default function Cart() {
   const cartEles = cart.map((prod) => {
     return (
       <div className="item-row" key={prod.id}>
-        <img src={prod.thumbnail} className="item-row-img" />
+        <img src={prod.thumbnail} className="item-row-img" alt=""/>
         <div className="title-price--holder">
           <h3 className="item-row-title" title={prod.title}>
             {prod.title}

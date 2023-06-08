@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import Products from "../components/Products";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { fetchProducts } from "../store/actionCreator";
 import slide1 from "../assets/images/slide-1.jpg";
 import slide2 from "../assets/images/slide-2.png";
@@ -29,7 +29,7 @@ export default function Home() {
 
   useEffect(() => {
     dispatch(fetchProducts());
-  }, []);
+  }, [dispatch]);
 
   const productsData = useSelector((state) => state.productsData);
 
@@ -67,7 +67,7 @@ export default function Home() {
         <div className="deals-grid">
           <div className="main-img">
             <Link to={`/products/${randomNum + 1}`}>
-              <img src={productsData.products[randomNum]?.thumbnail} />
+              <img src={productsData.products[randomNum]?.thumbnail} alt=""/>
               <h4 className="deal-title">
                 {productsData.products[randomNum]?.title}
               </h4>
@@ -78,7 +78,7 @@ export default function Home() {
             <div className="row">
               <div className="col">
                 <Link to={`/products/${randomNum + 3}`}>
-                  <img src={productsData.products[randomNum + 2]?.thumbnail} />
+                  <img src={productsData.products[randomNum + 2]?.thumbnail} alt=""/>
                   <h4 className="deal-title">
                     {productsData.products[randomNum + 2]?.title}
                   </h4>
@@ -86,7 +86,7 @@ export default function Home() {
               </div>
               <div className="col">
                 <Link to={`/products/${randomNum + 7}`}>
-                  <img src={productsData.products[randomNum + 6]?.thumbnail} />
+                  <img src={productsData.products[randomNum + 6]?.thumbnail} alt=""/>
                   <h4 className="deal-title">
                     {productsData.products[randomNum + 6]?.title}
                   </h4>
@@ -96,7 +96,7 @@ export default function Home() {
             <div className="row">
               <div className="col">
                 <Link to={`/products/${randomNum + 10}`}>
-                  <img src={productsData.products[randomNum + 9]?.thumbnail} />
+                  <img src={productsData.products[randomNum + 9]?.thumbnail} alt=""/>
                   <h4 className="deal-title">
                     {productsData.products[randomNum + 9]?.title}
                   </h4>
@@ -104,7 +104,7 @@ export default function Home() {
               </div>
               <div className="col">
                 <Link to={`/products/${randomNum + 5}`}>
-                  <img src={productsData.products[randomNum + 4]?.thumbnail} />
+                  <img src={productsData.products[randomNum + 4]?.thumbnail} alt=""/>
                   <h4 className="deal-title">
                     {productsData.products[randomNum + 4]?.title}
                   </h4>

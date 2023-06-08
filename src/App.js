@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import ProductDetails from "./pages/ProductDetails";
-import { useSelector } from "react-redux";
 import Cart from "./pages/Cart";
 import MainLayout from "./components/MainLayout";
 
