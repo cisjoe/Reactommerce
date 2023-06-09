@@ -17,7 +17,7 @@ export default function ProductDetails() {
 
   useEffect(() => {
     productsData.products.forEach((prod) => {
-      if (prod.id === params.id) {
+      if (prod.id == params.id) {
         dispatch(action("selected-product", prod));
       }
     });
