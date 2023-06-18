@@ -3,6 +3,10 @@
 </h1>
 
 <p align="center" >
+  <a href="https://reactommerce.netlify.app/">reactommerce.netlify.app</a>
+</p>
+
+<p align="center" >
   React E-Commerce that accesses <a href="https://dummyjson.com/">dummyjson API<a/> to create a simple E-C.
   <br>
   This app is built by me to practice React & Redux.
