@@ -13,6 +13,25 @@
 </p>
 
 ---
+  
+  <h3 align="center">Features</h3>
+<p align="center" >
+  • Add to cart
+  <br>
+  • Product-Details page
+  <br>
+  • Categories filtering
+  <br>
+  • Manage quantity from the cart
+  <br>
+  • Delete item
+  <br>
+  • Clear cart
+  <br>
+  • Total price calc
+</p>
+  
+---
 
 <h3 align="center">Things to add in the future</h3>
 <p align="center" >
