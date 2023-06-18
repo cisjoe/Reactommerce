@@ -18,22 +18,24 @@
 <p align="center" >
   • Pagintaion
    <br>
+  • Responsive
+   <br>
   • Account page
    <br>
   • Randomize products
   <br>
-  • Checkout information section
+  • Checkout-Information section
 </p>
 
 ---
  
 <div align="center">
-  <h3>This project built with</h3>
-    <code><img title="HTML" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /></code>
+  <h3>This project is built with</h3>
     <code><img title="CSS" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /></code>
     <code><img title="REACT JS" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /></code>
     <code><img title="REDUX" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" /></code>
     <code><img title="REACT-BOOTSTRAP" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" /></code>
+    <code><img title="DUMMYJSON" height="25" src="readme_files/dummyjson.svg" /></code>
 </div>
 
 ---
