@@ -649,6 +649,7 @@ nav .navbar-nav .nav-item.dropdown .dropdown-menu a:hover {
 
 .Cart .item-row .item-row-total-price {
   font-size: 20px;
+  width: 70px;
 }
 
 .Cart .item-row .item-row-delete-item {
